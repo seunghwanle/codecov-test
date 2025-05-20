@@ -12,4 +12,10 @@ describe("Greeting", () => {
     render(<Greeting name="Seunghwan" />);
     expect(screen.getByText("Hello Seunghwan!")).toBeInTheDocument();
   });
+
+  it("renders h1 tag with default text", () => {
+    render(<Greeting />);
+    const headings = screen.getAllByRole("heading", { level: 1 });
+    expect(headings[0]).toHaveTextContent("Hello World!");
+  });
 });
