@@ -15,12 +15,12 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: "lts/*" # 필요 시 원하는 Node 버전 명시
+          node-version: "lts/*"
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 8 # 사용하는 pnpm 버전으로 수정
+          version: 8
 
       - name: Install dependencies
         run: pnpm install
