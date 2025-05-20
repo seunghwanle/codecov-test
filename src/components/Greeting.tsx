@@ -3,5 +3,5 @@ interface GreetingProps {
 }
 
 export const Greeting = ({ name }: GreetingProps) => {
-  return <h1>Hello {name || "World"}!</h1>;
+  return <h1>Hello {name || "World!"}!</h1>;
 };
